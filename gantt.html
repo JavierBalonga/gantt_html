@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Gantt</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./assets/svg/book.svg"></img>
+        <img src="./assets/svg/computerGlobe.svg"></img>
+        <img src="./assets/svg/computerPerson.svg"></img>
+    </header>
+    <div class="sideBar">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+    </div>
+    <div class="main">
+        <div class="ganttChart">
+            <ul class="dayAxis">
+                <li>31/08/2020</li>
+                <li>01/09/2020</li>
+                <li>02/09/2020</li>
+                <li>03/09/2020</li>
+                <li>04/09/2020</li>
+                <li>05/09/2020</li>
+                <li>06/09/2020</li>
+            </ul>
+            <ul class="tasksList">
+                <li id="tsk1" data-data="31/08/2020 8:00:00;31/08/2020 22:00:00;#b03532;1"">Proceso1</li>
+                <li id="tsk2" data-data="01/09/2020 8:00:00;02/09/2020 22:00:00;#23CAA9;2;1"">Proceso2</li>
+                <li id="tsk3" data-data="01/09/2020 8:00:00;01/09/2020 22:00:00;#1C61CD;3;1"">Proceso3</li>
+                <li id="tsk4" data-data="03/09/2020 8:00:00;03/09/2020 22:00:00;#36DA4A;4;2,3">Proceso4</li>
+                <li id="tsk5" data-data="04/09/2020 8:00:00;06/09/2020 22:00:00;#b03532;1;4"">Proceso5</li>
+            </ul>
+            <svg id="connectors"><polyline/></svg>
+        </div>
+    </div>
+</body>
+</html>

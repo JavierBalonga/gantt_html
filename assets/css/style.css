@@ -1,0 +1,141 @@
+:root {
+    --white: #fff;
+    --divider: lightgrey;
+    --body: #f5f7f8;
+}
+body {
+    background: var(--body);
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-top: 40px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* The header */
+header {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: DarkSlateGrey;
+    align-items: center;
+    justify-content: space-around;
+}
+/* The sidebar menu */
+.sideBar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sideBar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideBar a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 100px;
+    margin-top: 45px;
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+    .sideBar {
+        padding-top: 15px;
+    }
+    .sideBar a {
+        font-size: 18px;
+    }
+}
+
+/* gantt Chart*/
+.ganttChart {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.ganttChart ul {
+    list-style: none;
+}
+.ganttChart a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* dayAxis */
+.ganttChart .dayAxis {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.ganttChart .dayAxis li {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+}
+.ganttChart .dayAxis li:not(:last-child) {
+    position: relative;
+}
+.ganttChart .dayAxis li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 850px;
+    border-right: 1px solid var(--divider);
+}
+
+/* tasksList */
+.ganttChart .tasksList li {
+    position: relative;
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 0;
+    opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .ganttChart .tasksList li {
+        padding: 10px;
+    }
+}
+
+/* connectors */
+.ganttChart #connectors{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ganttChart #connectors polyline {
+    stroke-width:2px;
+    stroke:black;
+    fill:transparent;
+}

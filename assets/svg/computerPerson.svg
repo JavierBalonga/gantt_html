@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="65" height="55" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle  cx="31" cy="28" r ="30" stroke="black" fill="DarkCyan"/>
+    <path d="M22,8 L10,8 Q5,8 5,13 L5,40 Q5,45 10,45 L53,45 Q58,45 58,40 L58,13 Q58,8 53,8 L40,8" stroke="black" fill="White"/>
+    <path d="M5,40 L58,40" stroke="black" fill="transparent"/>
+    <path d="M28,45 L28,48 L25,52" stroke="black" fill="transparent"/>
+    <path d="M34,45 L34,48 L37,52" stroke="black" fill="transparent"/>
+    <path d="M28,48 L34,48" stroke="black" fill="transparent"/>
+    <path d="M18,52 L44,52" stroke="black" fill="transparent"/>
+    <circle cx="31" cy="6" r="4" stroke="black" fill="White"/>
+    <path d="M27,18 L27,40" stroke="black" fill="transparent"/>
+    <path d="M31,28 L31,40" stroke="black" fill="transparent"/>
+    <path d="M35,18 L35,40" stroke="black" fill="transparent"/>
+    <path d="M27,28 Q24,28 24,25 L24,15 Q24,12 27,12 L35,12 Q38,12 38,15 L38,25 Q38,28 35,28" stroke="black" fill="transparent"/>
+    <path d="M17,16 L22,16" stroke="black" fill="transparent"/>
+    <path d="M7,16 A5,5 0,1,1 8,20" stroke="black" fill="transparent"/>
+    <path d="M13,22 L14,24" stroke="black" fill="transparent"/>
+    <path d="M20,25 A7,7 0,0,0 11,26" stroke="black" fill="transparent"/>
+    <path d="M9,29 A7,7 0,1,0 22,28" stroke="black" fill="transparent"/>
+    <path d="M23,31 L25,31" stroke="black" fill="transparent"/>
+    <path d="M45,16 L40,16" stroke="black" fill="transparent"/>
+    <path d="M55,16 A5,5 0,1,0 54,20" stroke="black" fill="transparent"/>
+    <path d="M49,22 L48,24" stroke="black" fill="transparent"/>
+    <path d="M42,25 A7,7 0,0,1 51,26" stroke="black" fill="transparent"/>
+    <path d="M53,29 A7,7 0,1,1 40,28" stroke="black" fill="transparent"/>
+    <path d="M39,31 L37,31" stroke="black" fill="transparent"/>
+</svg>
